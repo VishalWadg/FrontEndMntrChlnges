@@ -10,7 +10,10 @@ body{
     margin: 0;
     background-color: #F4D04E;
     justify-content: center;
-    font-size: 1rem;
+}
+.img{
+    width: 100%;
+    display: block;
 }
 h1{
     font-size: 1.45rem;
@@ -19,21 +22,29 @@ h1{
     box-shadow:.5rem .5rem black;
     border-radius:3%;
     padding: 1em;
-    width: 23rem;
-    height: 30rem;
+    max-width: 23rem;
+    max-height: 30rem;
     background-color: #FFFFFF;
+    font-size: 1em;
 }
-.banner img{
+.banner_img{
+    max-width:100%;
+    object-fit: contain;
     
+}
+.banner_img img{
+    width: 100%;
     border-radius: 3%;
 }
 .banner button{
     margin-top: .825em;
 }
 button{
+    padding: .4em .6em;
     border: none;
     background-color: #F4D04E;
     border-radius: 5%;
+    font-weight: 600;
 }
 .publisher{
     display: flex;
@@ -41,8 +52,8 @@ button{
     align-items: center;
 }
 .publisher_img{
-    width: 2rem;
-    height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
 }
 .publisher p{
     font-weight: 700;
@@ -53,4 +64,15 @@ button{
 }
 .card:hover{
     box-shadow:.595rem .595rem black;
+}
+@media (max-width: 413px){
+    .body{
+        font-size: .5rem;
+    }
+    .title{
+        font-size: .95rem;
+    }
+    .card{
+        width: 18rem;
+    }
 }
