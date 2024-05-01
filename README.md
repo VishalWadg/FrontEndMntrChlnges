@@ -1,1 +1,1 @@
-# FrontEnd Mentor challenges tha I tried to solve
+# FrontEnd Mentor challenges that I tried to solve
